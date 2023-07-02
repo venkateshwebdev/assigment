@@ -46,6 +46,9 @@ Screenshots
 ![Screenshot 3](https://github.com/venkateshwebdev/assigment/assets/105224564/e580f6e0-e21d-4275-825c-82f766a6ed42)
 
 
+Time taken to completed the task:
+Time taken to build: 2 hour 30 minutes
+
 
 
 
