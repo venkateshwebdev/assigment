@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Home from './Containers/Home';
+import UserDataContext from './Context/usersDataContext';
 
 function App() {
-  return (
+  const [userData,setUserData] = useState([])
+  const [isLoading,setIsLoading] = useState(false)
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserDataContext.Provider value={{userData,setUserData,isLoading,setIsLoading}}>
+      <Navbar />
+      <Home />
+      </UserDataContext.Provider> 
     </div>
   );
 }
