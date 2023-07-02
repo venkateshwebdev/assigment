@@ -1,8 +1,8 @@
 import { useContext, useEffect } from "react";
 import UserDataContext from "../Context/usersDataContext";
 import UserCard from "../Components/UserCard";
-import { UserButton } from "../Components/Navbar";
 import loader from "../icons/icons8-loading-infinity.gif"
+import UserButton from "../Components/UserButto";
 
 const Home = () => {
     const {userData,isLoading} = useContext(UserDataContext)
